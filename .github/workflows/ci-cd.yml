@@ -21,7 +21,7 @@ jobs:
 
       - name: Build image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/mi-app:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/mi-app:latest ./DeVops
 
       - name: Push image
         run: |
