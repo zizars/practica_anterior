@@ -22,7 +22,6 @@ jobs:
       - name: Build image
         run: |
           docker build -f DeVops/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/mi-app:latest ./DeVops
-          fix docker path
 
       - name: Push image
         run: |
